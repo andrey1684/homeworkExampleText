@@ -81,5 +81,6 @@ def main():
    get_formatted_output(data=organize_data)
    return group_members, get_formatted_output(data=organize_data)
 
+
 if __name__ == "__main__":
     main()
