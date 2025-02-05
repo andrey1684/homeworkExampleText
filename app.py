@@ -73,12 +73,13 @@ def get_formatted_output(data: T_ORGANIZED_DATA) -> T_OUTPUT:
    return organize_data()
 
 
-def main() -> None:
+def main():
    """You have a list of humans. Every human has "name" and "group".
    Your task is to show all groups, with amount and names of members for each group.
    """
    group_members = DataProvider().generate_group_members()
    get_formatted_output(data=organize_data)
+   return group_members, get_formatted_output(data=organize_data)
 
 if __name__ == "__main__":
     main()
